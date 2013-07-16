@@ -19,18 +19,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="logo-text brand" href="#">Mike's Ctrl Alt Del</a>
+      <a class="logo-text brand" href="welcome/index">Mike's Ctrl Alt Del</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <li class="active"><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="active"><a href="welcome/index"><i class="icon-home icon-white"></i> Home</a></li>
+          <li><?php echo Html::anchor('about', 'About'); ?></li>
+          <li><?php echo Html::anchor('contact', 'Contact'); ?></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">IT Consulting</a></li>
-              <li><a href="#">Computer Repair</a></li>
-              <li><a href="#">Networking</a></li>
+              <li><?php echo Html::anchor('services/consulting', 'IT Consulting'); ?></li>
+              <li><?php echo Html::anchor('services/repair', 'Computer Repair'); ?></li>
+              <li><?php echo Html::anchor('services/networking', 'Networking'); ?></li>
             </ul>
           </li>
         </ul>
