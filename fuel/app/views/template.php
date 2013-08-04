@@ -8,21 +8,23 @@
 	<?php echo Asset::css('bootstrap-responsive.min.css'); ?>
     <?php echo Asset::css('bootstrap.min.css'); ?>
     <?php echo Asset::js('bootstrap.min.js'); ?>
+    <?php echo Asset::css('main.css'); ?>
 
 </head>
 <body>
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
+    <a class="brand" href="welcome/index"><?php echo Asset::img('Logo.jpg'); ?></a>
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="logo-text brand" href="welcome/index">Mike's Ctrl Alt Del</a>
+      
       <div class="nav-collapse">
         <ul class="nav">
-          <li class="active"><a href="welcome/index"><i class="icon-home icon-white"></i> Home</a></li>
+          <li class="active"><a href="welcome/index"><i class=""></i> Home</a></li>
           <li><?php echo Html::anchor('about', 'About'); ?></li>
           <li><?php echo Html::anchor('contact', 'Contact'); ?></li>
           <li class="dropdown">
@@ -42,7 +44,9 @@
 	<div class="container">
         <h1><?php echo $title; ?></h1>
 
-        <?php echo $content; ?>
+        <div class="">
+			<?php echo $content; ?>
+        </div>
     </div>
 </body>
 </html>

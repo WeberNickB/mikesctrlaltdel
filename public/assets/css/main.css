@@ -1,0 +1,18 @@
+/* CSS Document */
+body{
+	font-size: 0.825em;
+	color: #ffffff;
+	background-color: #355664;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+	background-color: #fff;
+	color: #355664;
+}
+.imgSpace{
+	margin-right: 12px;	
+}
+.nav{
+	font-size: 155%;
+}
